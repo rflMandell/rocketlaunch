@@ -1,1 +1,16 @@
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/RocketLaunchSimulatorApplication.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/embedded/RocketSpec.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/Failure.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/Launch.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/LaunchWindow.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/Mission.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/Payload.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/Rocket.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/Telemetry.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/entity/WeatherCondition.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/enums/FailureSeverity.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/enums/LaunchStatus.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/enums/MissionStatus.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/enums/PayloadType.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/enums/RocketStatus.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/domain/enums/WindowStatus.java
