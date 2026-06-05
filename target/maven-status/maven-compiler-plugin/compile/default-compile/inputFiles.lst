@@ -31,6 +31,8 @@
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/dto/response/RocketSpecResponse.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/dto/response/TelemetryResponse.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/dto/response/WeatherConditionResponse.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/exception/BusinessException.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/exception/ResourceNotFoundException.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/FailureRepository.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/LaunchRepository.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/LaunchWindowRepository.java
@@ -39,3 +41,14 @@
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/RocketRepository.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/TelemetryRepository.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/WeatherConditionRepository.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/FailureService.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/LaunchService.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/LaunchWindowService.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/MissionService.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/PayloadService.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/RocketService.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/TelemetryService.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/validation/LaunchValidator.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/validation/LaunchWindowValidator.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/validation/RocketAvailabilityValidator.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/service/validation/WeatherValidator.java
