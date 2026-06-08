@@ -29,6 +29,26 @@ Prover uma API REST robusta que gerencie:
 
 ---
 
+## Integrantes do Grupo
+
+| Nome                       | RM       |
+|----------------------------|----------|
+| Rafael Mandel              | RM560333 |
+| Luis Felipe Crivellaro     | RM560877 |
+| Felipe Silva do Prado Lima | RM559848 |
+
+---
+
+## Vídeos
+
+| Tipo             | URL                                                         |
+|------------------|-------------------------------------------------------------|
+| 🎥 Vídeo Técnico | [Clique aqui e acesse o video Tecnico](https://youtube.com) |
+| 🎤 Vídeo Pitch   | [Clique aqui e acesse o video Pitch](https://youtube.com)   |
+> Lembrar de substituir as URLs acima após publicar os vídeos no YouTube
+
+---
+
 ## Decisões Arquiteturais
 
 ### Arquitetura em Camadas
@@ -59,15 +79,15 @@ para conversão.
 
 ## Decisões Técnicas
 
-| Decisão | Justificativa |
-|---|---|
-| PostgreSQL + Docker | Banco relacional robusto, fácil de subir localmente |
-| Spring Data JPA | Reduz boilerplate de acesso a dados com suporte a JPQL |
-| Lombok | Elimina getters/setters/builders repetitivos |
-| Records para DTOs | Imutabilidade e concisão para objetos de transferência |
-| `@Transactional` | Garante atomicidade em operações compostas |
-| `@Embedded` em RocketSpec | Agrupa especificações técnicas sem criar tabela separada |
-| `@PrePersist` / `@PreUpdate` | Auditoria automática de datas sem lógica no service |
+| Decisão                      | Justificativa                                            |
+|------------------------------|----------------------------------------------------------|
+| PostgreSQL + Docker          | Banco relacional robusto, fácil de subir localmente      |
+| Spring Data JPA              | Reduz boilerplate de acesso a dados com suporte a JPQL   |
+| Lombok                       | Elimina getters/setters/builders repetitivos             |
+| Records para DTOs            | Imutabilidade e concisão para objetos de transferência   |
+| `@Transactional`             | Garante atomicidade em operações compostas               |
+| `@Embedded` em RocketSpec    | Agrupa especificações técnicas sem criar tabela separada |
+| `@PrePersist` / `@PreUpdate` | Auditoria automática de datas sem lógica no service      |
 
 ---
 
@@ -75,21 +95,21 @@ para conversão.
 
 ### Entidades Centrais
 
-| Entidade | Descrição |
-|---|---|
-| `Rocket` | Foguete com especificações técnicas embutidas via `RocketSpec` |
-| `Mission` | Missão espacial com ciclo de vida controlado |
-| `Launch` | Evento de lançamento que conecta foguete, missão e janela |
-| `Telemetry` | Dados coletados durante o voo (altitude, velocidade, combustível) |
-| `WeatherCondition` | Condições climáticas registradas no momento do lançamento |
+| Entidade           | Descrição                                                         |
+|--------------------|-------------------------------------------------------------------|
+| `Rocket`           | Foguete com especificações técnicas embutidas via `RocketSpec`    |
+| `Mission`          | Missão espacial com ciclo de vida controlado                      |
+| `Launch`           | Evento de lançamento que conecta foguete, missão e janela         |
+| `Telemetry`        | Dados coletados durante o voo (altitude, velocidade, combustível) |
+| `WeatherCondition` | Condições climáticas registradas no momento do lançamento         |
 
 ### Entidades Auxiliares
 
-| Entidade | Descrição |
-|---|---|
-| `Payload` | Carga útil transportada pelo foguete |
+| Entidade       | Descrição                                  |
+|----------------|--------------------------------------------|
+| `Payload`      | Carga útil transportada pelo foguete       |
 | `LaunchWindow` | Janela de tempo disponível para lançamento |
-| `Failure` | Falha registrada durante a missão |
+| `Failure`      | Falha registrada durante a missão          |
 
 ### Relacionamentos
 ```
@@ -146,17 +166,17 @@ do fluxo principal do serviço.
 
 ## Tecnologias Utilizadas
 
-| Tecnologia | Versão | Uso |
-|---|---|---|
-| Java | 21 | Linguagem principal |
-| Spring Boot | 3.4.5 | Framework principal |
-| Spring Data JPA | 3.4.5 | Persistência e ORM |
-| Hibernate | 6.x | Implementação JPA |
-| PostgreSQL | 16 | Banco de dados relacional |
-| Docker | - | Container do banco de dados |
-| Maven | 3.x | Gerenciamento de dependências |
-| Lombok | - | Redução de boilerplate |
-| Bean Validation | 3.x | Validação de entrada |
+| Tecnologia      | Versão | Uso                           |
+|-----------------|--------|-------------------------------|
+| Java            | 21     | Linguagem principal           |
+| Spring Boot     | 3.4.5  | Framework principal           |
+| Spring Data JPA | 3.4.5  | Persistência e ORM            |
+| Hibernate       | 6.x    | Implementação JPA             |
+| PostgreSQL      | 16     | Banco de dados relacional     |
+| Docker          | -      | Container do banco de dados   |
+| Maven           | 3.x    | Gerenciamento de dependências |
+| Lombok          | -      | Redução de boilerplate        |
+| Bean Validation | 3.x    | Validação de entrada          |
 
 ---
 
@@ -201,89 +221,69 @@ curl http://localhost:8080/api/rockets
 
 ### Rockets — `/api/rockets`
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `POST` | `/api/rockets` | Cadastrar foguete |
-| `GET` | `/api/rockets` | Listar foguetes (paginado) |
-| `GET` | `/api/rockets/{id}` | Buscar foguete por ID |
-| `GET` | `/api/rockets/status/{status}` | Filtrar por status |
-| `PATCH` | `/api/rockets/{id}/status?status=` | Atualizar status |
-| `DELETE` | `/api/rockets/{id}` | Remover foguete |
+| Método   | Endpoint                           | Descrição                  |
+|----------|------------------------------------|----------------------------|
+| `POST`   | `/api/rockets`                     | Cadastrar foguete          |
+| `GET`    | `/api/rockets`                     | Listar foguetes (paginado) |
+| `GET`    | `/api/rockets/{id}`                | Buscar foguete por ID      |
+| `GET`    | `/api/rockets/status/{status}`     | Filtrar por status         |
+| `PATCH`  | `/api/rockets/{id}/status?status=` | Atualizar status           |
+| `DELETE` | `/api/rockets/{id}`                | Remover foguete            |
 
 ### Missions — `/api/missions`
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `POST` | `/api/missions` | Criar missão |
-| `GET` | `/api/missions` | Listar missões (paginado) |
-| `GET` | `/api/missions/{id}` | Buscar missão por ID |
-| `GET` | `/api/missions/status/{status}` | Filtrar por status |
-| `PATCH` | `/api/missions/{id}/cancel` | Cancelar missão |
+| Método  | Endpoint                        | Descrição                 |
+|---------|---------------------------------|---------------------------|
+| `POST`  | `/api/missions`                 | Criar missão              |
+| `GET`   | `/api/missions`                 | Listar missões (paginado) |
+| `GET`   | `/api/missions/{id}`            | Buscar missão por ID      |
+| `GET`   | `/api/missions/status/{status}` | Filtrar por status        |
+| `PATCH` | `/api/missions/{id}/cancel`     | Cancelar missão           |
 
 ### Launches — `/api/launches`
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `POST` | `/api/launches` | Agendar lançamento |
-| `GET` | `/api/launches` | Listar lançamentos (paginado) |
-| `GET` | `/api/launches/{id}` | Buscar lançamento por ID |
-| `GET` | `/api/launches/mission/{missionId}` | Lançamentos de uma missão |
-| `POST` | `/api/launches/{id}/windows/{windowId}` | Associar janela |
-| `POST` | `/api/launches/{id}/execute` | Executar lançamento |
-| `POST` | `/api/launches/{id}/complete` | Concluir lançamento |
-| `POST` | `/api/launches/{id}/abort` | Abortar lançamento |
+| Método | Endpoint                                | Descrição                     |
+|--------|-----------------------------------------|-------------------------------|
+| `POST` | `/api/launches`                         | Agendar lançamento            |
+| `GET`  | `/api/launches`                         | Listar lançamentos (paginado) |
+| `GET`  | `/api/launches/{id}`                    | Buscar lançamento por ID      |
+| `GET`  | `/api/launches/mission/{missionId}`     | Lançamentos de uma missão     |
+| `POST` | `/api/launches/{id}/windows/{windowId}` | Associar janela               |
+| `POST` | `/api/launches/{id}/execute`            | Executar lançamento           |
+| `POST` | `/api/launches/{id}/complete`           | Concluir lançamento           |
+| `POST` | `/api/launches/{id}/abort`              | Abortar lançamento            |
 
 ### Launch Windows — `/api/launch-windows`
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `POST` | `/api/launch-windows` | Criar janela |
-| `GET` | `/api/launch-windows` | Listar todas as janelas |
-| `GET` | `/api/launch-windows/{id}` | Buscar janela por ID |
-| `GET` | `/api/launch-windows/active` | Listar janelas ativas |
+| Método  | Endpoint                     | Descrição                |
+|---------|------------------------------|--------------------------|
+| `POST`  | `/api/launch-windows`        | Criar janela             |
+| `GET`   | `/api/launch-windows`        | Listar todas as janelas  |
+| `GET`   | `/api/launch-windows/{id}`   | Buscar janela por ID     |
+| `GET`   | `/api/launch-windows/active` | Listar janelas ativas    |
 | `PATCH` | `/api/launch-windows/expire` | Expirar janelas vencidas |
 
 ### Payloads — `/api/payloads`
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `POST` | `/api/payloads` | Cadastrar carga útil |
-| `GET` | `/api/payloads/{id}` | Buscar por ID |
-| `GET` | `/api/payloads/rocket/{rocketId}` | Cargas de um foguete |
-| `DELETE` | `/api/payloads/{id}` | Remover carga útil |
+| Método   | Endpoint                          | Descrição            |
+|----------|-----------------------------------|----------------------|
+| `POST`   | `/api/payloads`                   | Cadastrar carga útil |
+| `GET`    | `/api/payloads/{id}`              | Buscar por ID        |
+| `GET`    | `/api/payloads/rocket/{rocketId}` | Cargas de um foguete |
+| `DELETE` | `/api/payloads/{id}`              | Remover carga útil   |
 
 ### Telemetry — `/api/launches/{launchId}/telemetry`
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `POST` | `/api/launches/{launchId}/telemetry` | Registrar telemetria |
-| `GET` | `/api/launches/{launchId}/telemetry` | Listar telemetria (paginado) |
-| `GET` | `/api/launches/{launchId}/telemetry/latest` | Último registro |
+| Método | Endpoint                                    | Descrição                    |
+|--------|---------------------------------------------|------------------------------|
+| `POST` | `/api/launches/{launchId}/telemetry`        | Registrar telemetria         |
+| `GET`  | `/api/launches/{launchId}/telemetry`        | Listar telemetria (paginado) |
+| `GET`  | `/api/launches/{launchId}/telemetry/latest` | Último registro              |
 
 ### Failures — `/api/launches/{launchId}/failures`
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| `POST` | `/api/launches/{launchId}/failures` | Reportar falha |
-| `GET` | `/api/launches/{launchId}/failures` | Listar falhas |
-| `GET` | `/api/launches/{launchId}/failures/{failureId}` | Buscar falha por ID |
-
----
-
-## Integrantes do Grupo
-
-| Nome | RM | Participação |
-|---|---|---|
-| Rafa | RM000000 | Arquitetura, modelagem de domínio, services, strategy pattern |
-| Felipe | RM000000 | Entidades JPA, repositórios, DTOs, configuração Docker |
-| Luís | RM000000 | Controllers, exception handler, testes, documentação |
-
----
-
-## Vídeos
-
-| Tipo | URL                                                         |
-|---|-------------------------------------------------------------|
-| 🎥 Vídeo Técnico | [Clique aqui e acesse o video Tecnico](https://youtube.com) |
-| 🎤 Vídeo Pitch | [Clique aqui e acesse o video Pitch](https://youtube.com)   |
-> Lembrar de substituir as URLs acima após publicar os vídeos no YouTube
+| Método | Endpoint                                        | Descrição           |
+|--------|-------------------------------------------------|---------------------|
+| `POST` | `/api/launches/{launchId}/failures`             | Reportar falha      |
+| `GET`  | `/api/launches/{launchId}/failures`             | Listar falhas       |
+| `GET`  | `/api/launches/{launchId}/failures/{failureId}` | Buscar falha por ID |
