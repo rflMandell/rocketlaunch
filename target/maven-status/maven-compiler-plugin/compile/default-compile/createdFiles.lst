@@ -10,9 +10,11 @@ br/com/fiap/rocketlaunch/dto/response/RocketResponse.class
 br/com/fiap/rocketlaunch/dto/request/WeatherConditionRequest.class
 br/com/fiap/rocketlaunch/domain/entity/WeatherCondition$WeatherConditionBuilder.class
 br/com/fiap/rocketlaunch/exception/ResourceNotFoundException.class
+br/com/fiap/rocketlaunch/controller/LaunchWindowController.class
 br/com/fiap/rocketlaunch/service/validation/LaunchValidator.class
 br/com/fiap/rocketlaunch/dto/response/PayloadResponse.class
 br/com/fiap/rocketlaunch/domain/entity/WeatherCondition.class
+br/com/fiap/rocketlaunch/controller/LaunchController.class
 br/com/fiap/rocketlaunch/service/PayloadService.class
 br/com/fiap/rocketlaunch/dto/request/RocketRequest.class
 br/com/fiap/rocketlaunch/domain/enums/MissionStatus.class
@@ -44,8 +46,10 @@ br/com/fiap/rocketlaunch/domain/entity/Payload.class
 br/com/fiap/rocketlaunch/repository/PayloadRepository.class
 br/com/fiap/rocketlaunch/domain/entity/Launch.class
 br/com/fiap/rocketlaunch/domain/enums/PayloadType.class
+br/com/fiap/rocketlaunch/controller/FailureController.class
 br/com/fiap/rocketlaunch/domain/entity/Launch$LaunchBuilder.class
 br/com/fiap/rocketlaunch/domain/enums/FailureSeverity.class
+br/com/fiap/rocketlaunch/controller/TelemetryController.class
 br/com/fiap/rocketlaunch/service/LaunchService.class
 br/com/fiap/rocketlaunch/domain/entity/Mission$MissionBuilder.class
 br/com/fiap/rocketlaunch/domain/entity/Telemetry.class
@@ -53,9 +57,12 @@ br/com/fiap/rocketlaunch/repository/LaunchRepository.class
 br/com/fiap/rocketlaunch/domain/enums/LaunchStatus.class
 br/com/fiap/rocketlaunch/dto/response/FailureResponse.class
 br/com/fiap/rocketlaunch/service/TelemetryService.class
+br/com/fiap/rocketlaunch/controller/MissionController.class
 br/com/fiap/rocketlaunch/dto/response/LaunchWindowResponse.class
 br/com/fiap/rocketlaunch/service/RocketService.class
 br/com/fiap/rocketlaunch/repository/WeatherConditionRepository.class
+br/com/fiap/rocketlaunch/controller/RocketController.class
+br/com/fiap/rocketlaunch/controller/PayloadController.class
 br/com/fiap/rocketlaunch/service/LaunchWindowService.class
 br/com/fiap/rocketlaunch/domain/entity/Rocket.class
 br/com/fiap/rocketlaunch/domain/entity/Telemetry$TelemetryBuilder.class
