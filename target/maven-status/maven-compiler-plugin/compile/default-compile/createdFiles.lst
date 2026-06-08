@@ -18,12 +18,14 @@ br/com/fiap/rocketlaunch/controller/LaunchController.class
 br/com/fiap/rocketlaunch/service/PayloadService.class
 br/com/fiap/rocketlaunch/dto/request/RocketRequest.class
 br/com/fiap/rocketlaunch/domain/enums/MissionStatus.class
+br/com/fiap/rocketlaunch/exception/ErrorResponse.class
 br/com/fiap/rocketlaunch/domain/entity/LaunchWindow$LaunchWindowBuilder.class
 br/com/fiap/rocketlaunch/service/validation/WeatherValidator.class
 br/com/fiap/rocketlaunch/dto/response/LaunchResponse.class
 br/com/fiap/rocketlaunch/dto/request/PayloadRequest.class
 br/com/fiap/rocketlaunch/repository/TelemetryRepository.class
 br/com/fiap/rocketlaunch/domain/entity/Mission.class
+br/com/fiap/rocketlaunch/exception/GlobalExceptionHandler.class
 br/com/fiap/rocketlaunch/domain/entity/Payload$PayloadBuilder.class
 br/com/fiap/rocketlaunch/dto/request/FailureRequest.class
 br/com/fiap/rocketlaunch/dto/response/TelemetryResponse.class
@@ -38,6 +40,7 @@ br/com/fiap/rocketlaunch/domain/entity/Rocket$RocketBuilder.class
 br/com/fiap/rocketlaunch/domain/entity/Failure.class
 br/com/fiap/rocketlaunch/dto/request/TelemetryRequest.class
 br/com/fiap/rocketlaunch/repository/MissionRepository.class
+br/com/fiap/rocketlaunch/exception/ErrorResponse$FieldError.class
 br/com/fiap/rocketlaunch/dto/response/MissionResponse.class
 br/com/fiap/rocketlaunch/dto/request/MissionRequest.class
 br/com/fiap/rocketlaunch/domain/enums/WindowStatus.class

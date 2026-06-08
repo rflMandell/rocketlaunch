@@ -39,6 +39,8 @@
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/dto/response/TelemetryResponse.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/dto/response/WeatherConditionResponse.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/exception/BusinessException.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/exception/ErrorResponse.java
+/Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/exception/GlobalExceptionHandler.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/exception/ResourceNotFoundException.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/FailureRepository.java
 /Users/rafaelmandel/Documents/GitHub/rocketlaunch/src/main/java/br/com/fiap/rocketlaunch/repository/LaunchRepository.java
