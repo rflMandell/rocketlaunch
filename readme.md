@@ -41,10 +41,10 @@ Prover uma API REST robusta que gerencie:
 
 ## Vídeos
 
-| Tipo             | URL                                                         |
-|------------------|-------------------------------------------------------------|
-| 🎥 Vídeo Técnico | [Clique aqui e acesse o video Tecnico](https://youtube.com) |
-| 🎤 Vídeo Pitch   | [Clique aqui e acesse o video Pitch](https://youtube.com)   |
+| Tipo             | URL                                                                  |
+|------------------|----------------------------------------------------------------------|
+| 🎥 Vídeo Técnico | [Clique aqui e acesse o video Tecnico](https://youtu.be/3IW2fICThek) |
+| 🎤 Vídeo Pitch   | [Clique aqui e acesse o video Pitch](https://youtu.be/xeOOzurx25M)   |
 > Lembrar de substituir as URLs acima após publicar os vídeos no YouTube
 
 ---
